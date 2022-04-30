@@ -1,0 +1,23 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Action": [
+        "dynamodb:GetItem",
+        "dynamodb:UpdateItem",
+		"dynamodb:Scan",
+		"dynamodb:DeleteItem",
+		"dynamodb:PutItem"
+      ],
+      "Effect": "Allow",
+      "Resource": "*"
+    },
+    {
+      "Action": [
+        "s3:GetObject"
+      ],
+      "Effect": "Allow",
+      "Resource": "*"
+    }
+  ]
+}
